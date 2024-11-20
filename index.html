@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="mobile-menu" class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#morePhotos">My Pictures</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to My BEATIFUL Website</h1>
+            <p>My PHOTO(I know im perfect , thank U)</p>
+            <img id="myPhoto" src="./photo_2024-10-07_13-13-03.jpg" alt="Home Image"
+                onerror="this.src='https://via.placeholder.com/800x400?text=Home+Image';">
+
+        </section>
+        <section id="about">
+            <h2>Already Learned Languages</h2>
+            <ul type="circle">
+                <li>C++</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Meow-Meow Language</li>
+                <li>Moow-Moow Language</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact ME</h2>
+            <a href="tele:+380 11 22 33 44" >+380 11 22 33 44</a><a href="google.com">My Coordinates</a><a href="google.com">kalivan228-1337@gmail.com</a>
+        </section>
+
+        <div class="slider">
+            <h1 id="morePhotos">More My BEATIFUL Photos and My PRojects</h1>
+            <div class="slide-container">
+                <img src="./imagesForSlider/Pearl_Winter_White_Russian_Dwarf_Hamster_-_Front.jpg" alt="Slide 1"
+                    onerror="this.src='https://via.placeholder.com/800x400?text=Slide+1';">
+                <img src="./imagesForSlider/photo_2024-11-20_14-32-25.jpg" alt="Slide 2"
+                    onerror="this.src='https://via.placeholder.com/800x400?text=Slide+2';">
+                <img src="./imagesForSlider/photo_2024-11-20_14-34-07.jpg" alt="Slide 3"
+                    onerror="this.src='https://via.placeholder.com/800x400?text=Slide+3';">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

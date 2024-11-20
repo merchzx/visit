@@ -1,0 +1,177 @@
+/* Main styles */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body,
+html {
+    background-color: rgb(202, 199, 159);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+p,h1,h2 {
+    color: rgb(0, 0, 0);
+}
+
+header,
+section,
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation menu styles */
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-list li a {
+    transition: 0.1s ease-in-out;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.nav-list li a:hover{
+    font-size: 24px;
+    color: red;
+}
+
+/* Mobile menu styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-list li a:focus {
+        font-size: 24px;
+        color: red;
+    }
+
+    .nav-list {
+        display: none;
+        width: 100%;
+        position: sticky;
+        top: 0px;
+        left: 0;
+        background: white;
+    }
+
+    .nav-list li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+/* Slider styles */
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.slide-container {
+    position: relative;
+    width: 100%;
+}
+
+.slide-container img {
+    width: 100%;
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Gallery and images styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img,
+.slide-container img,
+section img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Ensures images in text sections are responsive */
+section img {
+    display: block;
+    margin: 10px auto;
+}
+#about ul li {
+    margin-top: 20px;
+    margin-left: 39vw;
+    width: 15vw;
+}
+
+#about h2 {
+    margin-bottom: 35px;
+}
+
+footer {
+    padding: 10px;
+}
+
+
+
+#morePhotos {
+    text-align: center;
+}
+
+#contact a {
+    display: block;
+    margin-bottom: 25px;
+    text-decoration: none;
+}
